@@ -45,7 +45,7 @@ def deal_activated():
     for flag in flags:
       name = flag.get('name')
       enabled = flag.get('enabled', False)
-      if enabled === True:
+      if enabled == True:
         print(f"Enabling FeatureFlag {name}")
 
     return 'received!', 200
@@ -85,7 +85,7 @@ def deal_activated():
       for flag in flags:
         name = flag.get('name')
         enabled = flag.get('enabled', False)
-        if enabled === True:
+        if enabled == True:
           print(f"Enabling FeatureFlag {name}")
           raise Exception("A problem occurred setting a flag")
     except Exception as e:
